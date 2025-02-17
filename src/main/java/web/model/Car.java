@@ -1,4 +1,8 @@
-package model;
+package web.model;
+
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
 
 public class Car {
     private String mark;
@@ -9,15 +13,6 @@ public class Car {
         this.mark = mark;
         this.model = model;
         this.year = year;
-    }
-
-    @Override
-    public String toString() {
-        return "Car{" +
-                "mark='" + mark + '\'' +
-                ", model='" + model + '\'' +
-                ", year=" + year +
-                '}';
     }
 
     public String getMark() {
@@ -42,5 +37,14 @@ public class Car {
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "mark='" + mark + '\'' +
+                ", model='" + model + '\'' +
+                ", year=" + year +
+                '}';
     }
 }

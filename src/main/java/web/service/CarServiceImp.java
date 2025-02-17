@@ -1,10 +1,13 @@
-package service;
+package web.service;
 
-import model.Car;
+import org.springframework.stereotype.Service;
+import web.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
+@Service
 public class CarServiceImp implements CarService {
     private final List<Car> cars;
 
@@ -15,7 +18,6 @@ public class CarServiceImp implements CarService {
         cars.add( new Car("Lexus", "GX460", 2024));
         cars.add( new Car("Acura", "MDX", 2024));
         cars.add( new Car("Subaru", "Forester", 2024));
-
     }
 
     @Override
