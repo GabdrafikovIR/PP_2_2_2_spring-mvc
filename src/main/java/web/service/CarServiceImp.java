@@ -1,5 +1,6 @@
 package web.service;
 
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import web.model.Car;
 
@@ -7,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@Service
+@Component
 public class CarServiceImp implements CarService {
     private final List<Car> cars;
 
