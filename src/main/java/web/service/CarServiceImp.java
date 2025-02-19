@@ -8,11 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@Component
+@Service
 public class CarServiceImp implements CarService {
     private final List<Car> cars;
 
-    public CarServiceImp() {
+    public CarServiceImp() { //
         cars = new ArrayList<>();
         cars.add( new Car("Toyota", "LC300", 2024));
         cars.add( new Car("Honda", "Pilot", 2024));
